@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Blog</title>
+    <link rel="stylesheet" href={{ url_for('static', filename='style.css') }}>
+</head>
+<body>
+    <header>
+        <h1>My Blog</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="featured-post">
+        <h2>Featured Post</h2>
+        <article>
+            <img src="https://dca.gob.gt/noticias-guatemala-diario-centro-america/wp-content/uploads/2020/08/foto-1-pag-14-14.jpg" alt="Featured Post Image">
+            <h3>Post Title</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla condimentum tortor id elementum.</p>
+            <a href="#">Read More</a>
+        </article>
+    </section>
+
+    <section class="recent-posts">
+        <h2>Recent Posts</h2>
+        <div class="post">
+            <img src="https://images2.minutemediacdn.com/image/fetch/w_2000,h_2000,c_fit/https%3A%2F%2Ftherealchamps.com%2Fwp-content%2Fuploads%2Fgetty-images%2F2018%2F08%2F520688766.jpeg" alt="Post 1 Image">
+            <h3>Post 1 Title</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <a href="#">Read More</a>
+        </div>
+        <div class="post">
+            <img src="https://dca.gob.gt/noticias-guatemala-diario-centro-america/wp-content/uploads/2020/08/foto-1-pag-14-14.jpg" alt="Post 2 Image">
+            <h3>Post 2 Title</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <a href="#">Read More</a>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 My Blog</p>
+    </footer>
+</body>
+</html>

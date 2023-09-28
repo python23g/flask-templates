@@ -1,5 +1,5 @@
 from flask import Flask, render_template
-from db import featured_posts, recent_posts
+from db import featured_posts, recent_posts, get_post
 
 
 app = Flask(__name__)
@@ -16,6 +16,13 @@ def home():
     }
 
     return render_template('home.html', context=context)
+
+
+@app.route('/blog/<int:pk>')
+def blog(pk: int):
+    post = get_post(pk)
+
+    return render_template('blog.html', post=post)
 
 
 if __name__ == "__main__":

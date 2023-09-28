@@ -68,6 +68,24 @@ footer {
     padding: 1rem 0;
 }
 
-img {
-    width: 500px;
+
+/* Add this CSS to create side-by-side layout for recent posts */
+.recent-posts .post {
+    width: calc(50% - 20px);
+    margin-right: 20px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+/* Adjust the margins for the last post in each row */
+.recent-posts .post:nth-child(2n) {
+    margin-right: 0;
+}
+
+/* Add responsive styles to adapt to smaller screens */
+@media screen and (max-width: 768px) {
+    .recent-posts .post {
+        width: 100%;
+        margin-right: 0;
+    }
 }
